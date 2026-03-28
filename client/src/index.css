@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* theme tokens */
+:root{
+  --gov-blue:#0b3d91;
+  --neon:#00E5FF;
+  --glass-bg: rgba(255,255,255,0.04);
+}
+
+/* glass */
+.glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  backdrop-filter: blur(8px) saturate(120%);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* subtle neon */
+.neon-border {
+  box-shadow: 0 10px 30px rgba(0,229,255,0.06);
+}
+
+/* smooth */
+.smooth { transition: all .18s cubic-bezier(.2,.9,.2,1); }
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+   width: 4px;
+
+}
+::-webkit-scrollbar-track {
+   background: black;
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgba(255, 255, 255, 0.1);
+   border-radius: 20px;   }
